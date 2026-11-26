@@ -1,5 +1,7 @@
 # Subscriptions demo (Stripe test mode)
 
+[![CI](https://github.com/codenlighten/saas-fullstack-demo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/codenlighten/saas-fullstack-demo/actions/workflows/ci.yml)
+
 A small full-stack example: pricing page, Stripe Checkout, a signature-verified webhook and an idempotent subscription store, in Next.js and TypeScript.
 
 > **This is a demo.** It runs against Stripe **test mode** only and sells nothing. It has no customers and takes no real payments. The app refuses to start checkout with any key that is not a `sk_test_` key.
