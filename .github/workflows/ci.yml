@@ -13,7 +13,6 @@ jobs:
       - run: npm run typecheck
       - run: npm run lint
       - run: npm test
-      - run: npm run build
-        env:
-          STRIPE_SECRET_KEY: sk_test_ci_placeholder
-          STRIPE_WEBHOOK_SECRET: whsec_ci_placeholder
+      - run: npx playwright install --with-deps chromium
+      # Builds the app, starts it with placeholder secrets and drives it in a browser.
+      - run: npm run test:e2e
